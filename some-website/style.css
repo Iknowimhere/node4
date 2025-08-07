@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    position: relative;
+}
+nav{
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+}
+nav .links{
+     display: flex;
+    align-items: center;
+    gap: 2em;
+}
+footer{
+    height: 75px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: aqua;
+    text-align: center;
+    align-content: center;
+}
+.container{
+    height: calc(100%-150px);
+}
+.hero img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.form-container{
+    /* background-color: red;    */
+    width: 350px;
+    margin: 0 auto;
+}
+.form-container form{
+        display: flex;
+    flex-direction: column;
+    padding: 1em;
+    gap: 1em;
+}
+form input,button{
+    padding: 1em;
+}
