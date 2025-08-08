@@ -1,5 +1,6 @@
 import express from "express";
 import mongoose from "mongoose";
+import cors from 'cors';
 let app = express();
 //db connection
 async function db() {
@@ -24,6 +25,7 @@ let todoSchema = new mongoose.Schema({
 let Todo = mongoose.model("Task", todoSchema);
 
 //middleware stack
+app.use(cors({origin:"http://localhost:5173"}))
 app.use(express.json());
 
 //get all todos
