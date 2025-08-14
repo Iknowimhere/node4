@@ -44,7 +44,8 @@ let authSchema = new mongoose.Schema(
   { timestamps: true } //createdAt and updatedAt
 );
 
-//middleware pre hooks--they run before mongoose query--they are on schema level
+//middleware are functions and they are also called
+//  pre hooks--they run before mongoose query--they are on schema level
 authSchema.pre("save",async function(next){
   if(this.isModified('password')){
     //hash the password
