@@ -6,6 +6,6 @@ export default async function dbConnect() {
         console.log("db connected");
         
     } catch (error) {
-        console.log("mongoose error: ",error.message);
+        console.log("mongoose error: ",error.message);    
     }
 }

@@ -4,6 +4,9 @@ import authRoutes from './routes/auth.routes.js'
 dbConnect()
 let app=express()
 
+//middleware
+app.use(express.json())
+
 //routes
 app.use("/api/v1/auth",authRoutes);
 
