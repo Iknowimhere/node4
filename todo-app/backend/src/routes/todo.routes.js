@@ -1,4 +1,6 @@
 import express from "express";
+//router instance
+let router = express.Router();
 import {
   deleteTodo,
   getTodo,
@@ -7,8 +9,6 @@ import {
   updateStatus,
   updateTask,
 } from "../controllers/todo.controllers.js";
-//router instance
-let router = express.Router();
 
 //get all todos
 router.get("/", getTodos);
